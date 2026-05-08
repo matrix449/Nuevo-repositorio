@@ -1,5 +1,6 @@
 const prompt = require("prompt-sync")();
-let tipodecalculo = prompt("¿Qué operación desea realizar? (suma = 1, resta = 2, multiplicación = 3, división = 4)");
+let tipodecalculo = prompt("¿Qué operación desea realizar? (suma = 1, resta = 2, multiplicación = 3, división = 4), potencia = 5): ");
+console.log("cuando seleccione potencia, el primer número será la base y el segundo número será el exponente");
 let valor1 = prompt("Ingrese el primer número:");
 let valor2 = prompt("Ingrese el segundo número:");
 
@@ -15,5 +16,8 @@ if (tipodecalculo == "1") {
 } else if (tipodecalculo == "4") {
     let resultado = parseFloat(valor1) / parseFloat(valor2);
     console.log("El resultado de la división es: " + resultado);
+} else if (tipodecalculo == "5") {
+    let resultado = parseFloat(valor1) ** parseFloat(valor2);
+    console.log("El resultado de la potencia es: " + resultado);
 }
 
